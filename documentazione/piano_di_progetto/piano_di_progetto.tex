@@ -1,0 +1,61 @@
+\input{packages}
+\input{config}
+
+\begin{document}
+
+\makeatletter
+\begin{titlepage}
+	\begin{center}
+		\vspace*{-5cm}
+		\author{Jawa Druids}
+		\title{Piano di Progetto}
+		\date{} %LASCIARE QUESTO CAMPO VUOTO, SE LO TOLGO STAMPA LA DATA CORRENTE
+		\includegraphics[width=0.5\linewidth]{../immagini/DRUIDSLOGO.jpg}\\[4ex]
+		{\huge \bfseries  \@title }\\[2ex]
+		{\LARGE  \@author}\\[50ex]
+		\vspace*{-9cm}
+		\begin{table}[H]
+			\renewcommand{\arraystretch}{1.4}
+			\centering
+			\begin{tabular}{r | l}
+				\textbf{Versione} & 4.0.0 \\%RIGA PER INSERIRE LA VERSIONE ULTIMA DEL DOCUMENTO
+				\textbf{Data approvazione} & 2021-05-23\\
+				\textbf{Responsabile} & Andrea Dorigo \\
+				\textbf{Redattori} & \makecell[tl]{Andrea Dorigo \\ Alfredo Graziano} \\
+				\textbf{Verificatori} & \makecell[tl]{Andrea Cecchin \\ Margherita Mitillo } \\
+		%MAKECELL SERVE PER POI ANDARE A CAPO ALL'INTERNO DELLA CELLA
+				\textbf{Stato} & Approvato\\
+				\textbf{Lista distribuzione} & \makecell[tl]{Jawa Druids \\ Prof. Tullio Vardanega \\ Prof. Riccardo Cardin \\ Sync Lab}\\
+				\textbf{Uso} & Esterno
+			\end{tabular}
+		\end{table}
+		\vspace{0.1cm}
+		\hfill \break
+		\fontsize{17}{10}\textbf{Sommario} \\
+		\vspace{0.1cm}
+    Il presente documento contiene la pianificazione delle attività del gruppo  \normalsize\textit{Jawa Druids} atte al soddisfacimento del capitolato \normalsize\textit{GDP: Gathering Detection Platform} di  \normalsize\textit{Sync Lab}.
+	\end{center}
+\end{titlepage}
+\makeatother
+
+\input{registro_delle_modifiche}
+
+%COMANDO PER LA CREAZIONE DELL'INDICE
+
+\tableofcontents{}
+\listoffigures
+\listoftables
+\input{capitoli/1-Introduzione}
+\input{capitoli/2-Analisi_dei_rischi}
+\input{capitoli/3-Modello_di_sviluppo}
+\input{capitoli/4-Pianificazone}
+\input{capitoli/5-Preventivo}
+\input{capitoli/6-Consuntivo}
+\input{capitoli/7-Attualizzazione_dei_rischi}
+\input{capitoli/8-Organigramma}
+
+%PER RENDERE PIÙ CHIARA LA STESURA DEI DOCUMENTI È MEGLIO LASCIARE SEPARATI IN FILE DIVERSI OGNI CAPITOLO
+
+% \input{esempio} -- esempio di codice per inserire un nuovo capitolo
+
+\end{document}

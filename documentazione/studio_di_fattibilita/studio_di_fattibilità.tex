@@ -1,0 +1,61 @@
+\input{packages}
+\input{config}
+
+\begin{document}
+	
+	\makeatletter
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{-4cm}
+			\author{Jawa Druids} 
+			\title{Studio di Fattibilità}
+			\date{} %LASCIARE QUESTO CAMPO VUOTO, SE LO TOLGO STAMPA LA DATA CORRENTE
+			\includegraphics[width=0.5\linewidth]{../immagini/DRUIDSLOGO.jpg}\\[4ex]
+			{\huge \bfseries  \@title }\\[2ex] 
+			{\LARGE  \@author}\\[50ex]
+			\vspace*{-9cm}
+			\begin{table}[H]
+				\renewcommand{\arraystretch}{1.4}
+				\centering
+				\begin{tabular}{r | l}
+					\textbf{Versione} & 1.0.0 \\%RIGA PER INSERIRE LA VERSIONE ULTIMA DEL DOCUMENTO
+					\textbf{Data approvazione} & 02-12-2020\\
+					\textbf{Responsabile} & Margherita Mitillo \\
+					\textbf{Redattori} & \makecell[tl]{Margherita Mitillo \\ Emma Roveroni} \\
+					\textbf{Verificatori} & \makecell[tl]{Igli Mezini \\ Mattia Cocco} \\
+					%MAKECELL SERVE PER POI ANDARE A CAPO ALL'INTERNO DELLA CELLA
+					\textbf{Stato} & Approvato\\
+					\textbf{Lista distribuzione} & \makecell[tl]{Jawa Druids \\ Prof. Tullio vardanega \\ Prof. Riccardo Cardin \\ Sync Lab}\\
+					\textbf{Uso} & Interno
+				\end{tabular}
+			\end{table}
+			\vspace{0.1cm}
+			\hfill \break
+			\fontsize{17}{10}\textbf{Sommario} \\
+			\vspace{0.1cm}
+			Studio di Fattibilità dei capitolati proposti. 
+		\end{center}
+	\end{titlepage}
+	\makeatother
+	
+	\input{registro_delle_modifiche}
+	
+	%COMANDO PER LA CREAZIONE DELL'INDICE
+	
+	\tableofcontents{}
+	
+	%PER RENDERE PIÙ CHIARA LA STESURA DEI DOCUMENTI È MEGLIO LASCIARE SEPARATI IN FILE DIVERSI OGNI CAPITOLO
+	
+	% \input{esempio} -- esempio di codice per inserire un nuovo capitolo
+\input{capitoli/Introduzione}
+\input{capitoli/C3}
+\input{capitoli/C1}
+\input{capitoli/C2}
+\input{capitoli/C4}
+\input{capitoli/C5}
+\input{capitoli/C6}
+\input{capitoli/C7}
+
+% bibliography, glossary and index would go here.
+
+\end{document}

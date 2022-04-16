@@ -1,0 +1,57 @@
+
+\input{packages}
+\input{config}
+
+\begin{document}
+	
+	\makeatletter
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{-4cm}
+			\author{Jawa Druids} 
+			\title{Piano di Qualifica}
+			\date{} %LASCIARE QUESTO CAMPO VUOTO, SE LO TOLGO STAMPA LA DATA CORRENTE
+			\includegraphics[width=0.5\linewidth]{../immagini/DRUIDSLOGO.jpg}\\[4ex]
+			{\huge \bfseries  \@title }\\[2ex] 
+			{\LARGE  \@author}\\[50ex]
+			\vspace*{-9cm}
+			\begin{table}[H]
+				\renewcommand{\arraystretch}{1.4}
+				\centering
+				\begin{tabular}{r | l}
+					\textbf{Versione} & 4.0.0 \\%RIGA PER INSERIRE LA VERSIONE ULTIMA DEL DOCUMENTO
+					\textbf{Data approvazione} & 2021-05-23\\
+					\textbf{Responsabile} & Andrea Cecchin\\
+					\textbf{Redattori} & \makecell[tl]{ Emma Roveroni \\ Margherita Mitillo} \\
+					\textbf{Verificatori} & \makecell[tl]{Andrea Dorigo \\ Andrea Cecchin \\ Emma Roveroni} \\
+					%MAKECELL SERVE PER POI ANDARE A CAPO ALL'INTERNO DELLA CELLA
+					\textbf{Stato} & Approvato\\
+					\textbf{Lista distribuzione} & \makecell[tl]{Jawa Druids \\ Prof. Tullio Vardanega \\ Prof. Riccardo Cardin \\ Sync Lab}\\
+					\textbf{Uso} & Esterno  
+				\end{tabular}
+			\end{table}
+			\vspace{0.1cm}
+			\hfill \break
+			\fontsize{17}{10}\textbf{Sommario} \\
+			\vspace{0.1cm}
+			Il documento contiene le strategie di verifica e validazione seguite dal gruppo \emph{\normalsize\textit{Jawa Druids}} durante lo svolgimento del progetto \emph{\normalsize\textit{Gathering Detection Platform}}.
+		\end{center}
+	\end{titlepage}
+	\makeatother
+	
+	\input{registro_delle_modifiche}
+	\tableofcontents{}
+	\listoffigures
+	\listoftables
+	\input{capitoli/c1_Introduzione}
+	\input{capitoli/c2_Qualità_di_processo}
+	\input{capitoli/c3_Qualità_di_prodotto}
+	\input{capitoli/c4_Specifica_dei_test}
+	\input{capitoli/c5_Resoconto_attività_di_verifica}
+	\input{capitoli/c6_Valutazioni_per_il_miglioramento}
+	\input{capitoli/c7_Esiti_delle_revisioni}
+	
+	
+	
+	
+\end{document}
